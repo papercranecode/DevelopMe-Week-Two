@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content= "width=device-width, initial-scale=1.0"> 
+    <title>Contact</title>
+    <link rel="stylesheet" type="text/css" href="styles/browser.css"> 
+</head>
+
+<body>
+    <div class="nav-center"><!-- this is to center the nav container in the media query -->
+      <nav class="navigation">
+          <h1 class="h1-ignis">Ignis</h1>
+          <div class="burger"><img src="assets/images/burger.svg"></div>
+
+          <div class="large-nav"><!-- this only shows at full width -->
+              <p class="nav-link"><a href="index.html">Home</a></p>
+              <p class="nav-link"><a href="blog.html">Blog</a></p>
+              <p class="nav-link"><a href="contact.html">Contact</a></p>
+              <p class="nav-link magnify"><img src="assets/icons/magnify.svg"></p>
+          </div>
+      </nav>
+  </div>
+
+    <h2 class="colored-header">Contact</h2>
+
+    <form>
+        <div class="form-space">
+        <label for="message" id="message-box" name="message">Message</label>
+        <textarea id="message-box" name="message" rows="10"></textarea>
+        </div>
+
+        <div class="form-space">
+        <label for="name">Name*</label>
+        <input type="text" id="name" name="name">
+        </div>  
+
+         <div class="form-space">
+        <label for="email">Email*</label>
+        <input type="text" id="email" name="email">
+        </div>
+    </form>
+
+    <button id="send-button">Post Comment</button>
+
+    <footer>
+            <nav class="socials">
+                <a href="#"><img src="./assets/icons/facebook.svg" /></a>
+                <a href="#"><img src="./assets/icons/twitter.svg" /></a>
+                <a href="#"><img src="./assets/icons/ball.svg" /></a>
+                <a href="#"><img src="assets/icons/linkedin.svg" /></a>
+                <a href="#"><img src="assets/icons/youtube.svg" /></a>
+            </nav>
+        </footer>
+
+</body>
+</html>

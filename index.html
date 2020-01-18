@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content= "width=device-width, initial-scale=1.0"> 
+    <title>Index</title>
+    <link rel="stylesheet" type="text/css" href="styles/browser.css"> 
+</head>
+
+<body>
+    <div class="nav-center"><!-- this is to center the nav container in the media query -->
+        <nav class="navigation">
+            <h1 class="h1-ignis">Ignis</h1>
+            <div class="burger"><img src="assets/images/burger.svg"></div>
+
+            <div class="large-nav"><!-- this only shows at full width -->
+                <p class="nav-link"><a href="index.html">Home</a></p>
+                <p class="nav-link"><a href="blog.html">Blog</a></p>
+                <p class="nav-link"><a href="contact.html">Contact</a></p>
+                <p class="nav-link magnify"><img src="assets/icons/magnify.svg"></p>
+            </div>
+        </nav>
+    </div>
+
+<div class="content-center"> <!-- this is for the media query to center the content -->
+    <main>
+        <section class="my-name-is-joe">
+                <h3 class="txt-1">My name is Joe<span class="txt-1-dot">.</span> <br /> I'm a <span class="photographer">photographer</span></h3>
+                <p class="txt-3">Scroll down to begin your adventure</p>
+        </section>
+
+        <!-- photo hero in a different div from the rest of the gallery to ensure it can fill the width of the page in wide mode -->
+        <div class="photo-hero"></div>
+        <img class="photos photo-hero-img" id="photo-hero" src="./assets/images/hero.jpeg" alt="Portrait of girl" />
+        </div>
+
+        <!-- gallery images in two separate divs, so that they fill the columns correctly -->
+        <div class="gallery">
+            <div>
+            <img class="photos photo-portrait" src="./assets/images/portrait.jpg" alt="Portrait of girl" />
+            <img class="photos photo-cup" src="./assets/images/cup.jpg" alt="Image of cup" />
+            <img class="photos photo-guitar" src="./assets/images/guitar.jpg" alt="Image of guitar" />
+        </div>
+        <div>
+            <img class="photos photo-woods" src="./assets/images/woods.jpg" alt="Girl in the woods" />
+            <img class="photos photo-portraitBW" src="./assets/images/portraitBW.jpg" alt="Portrait of man" />
+            <img class="photos photo-gorilla" src="./assets/images/gorilla.jpg" alt="Portrait of gorilla" />
+            <img class="photos photo-grafitti" src="./assets/images/graf.jpg" alt="Image of grafitti" />
+            <img class="photos photo-tape" src="./assets/images/tape.jpg" alt="Image of casette  tape" />
+        </div>
+        </div>
+            
+        
+        </main>
+
+<footer>
+        <nav class="socials">
+            <a href="#"><img src="./assets/icons/facebook.svg" /></a>
+            <a href="#"><img src="./assets/icons/twitter.svg" /></a>
+            <a href="#"><img src="./assets/icons/ball.svg" /></a>
+            <a href="#"><img src="assets/icons/linkedin.svg" /></a>
+            <a href="#"><img src="assets/icons/youtube.svg" /></a>
+        </nav>
+    </footer>
+
+</body>
+
+</html>
