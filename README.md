@@ -6,9 +6,9 @@ The brief was to create the website from scratch, from a PDF design supplied by 
 
 ## Features
 The webpage features:
-*HTML5 with relevant tags
-*SASS
-*Responsivity using media queries
+* HTML5 with relevant tags
+* SASS
+* Responsivity using media queries
 
 ## Screenshot
 ![Example screenshot](./assets/images/Screenshot.jpg)
