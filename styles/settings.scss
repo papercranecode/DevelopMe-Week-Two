@@ -1,0 +1,28 @@
+$colorOne: #41cadd;; //turquoise
+$colorTwo: #4a4a4a;; //text colour
+$colorThree: white; //white
+$colorFour: #fff0e9; //peach
+$colorFive: #ff6a7c; //hot pink
+$colorSix: #b2b5ba;
+
+$fontSize1: 25px;
+$fontSize2: 15px;
+$fontSize3: 10px;
+$fontSize4: 35px;
+$fontSize5: 30px;
+$fontSize6: 80px;
+$fontSize7: 60px;
+
+@font-face {
+    font-family: 'Nunito';
+    src: url('../assets/fonts/Nunito/Nunito-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('../assets/fonts/Poppins/Poppins-Regular.ttf');
+}
+
+@font-face {
+    font-family: serif;
+}

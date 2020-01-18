@@ -1,0 +1,135 @@
+h1 {
+    display: flex;
+    justify-content: center;
+    font-family: 'Poppins', arial, sans-serif; 
+    color: black;
+}
+
+.nav-big {
+    display: none;
+}
+
+.burger {
+    display: flex;
+    justify-content: center;
+}
+
+.large-nav {
+    display: none;
+}
+
+.header-block {
+    display: flex;
+    justify-content: space-between;
+}
+
+@media (min-width: 600px) {
+
+    .nav-center {
+        display: block;
+        text-align: center;
+        margin: 0 40px;
+    }
+
+    .navigation {
+        display: flex;
+        justify-content: space-between;
+        vertical-align: top;
+    }
+
+   .h1-ignis {
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    .burger {
+        display: flex;
+        justify-content: flex-end;
+    }
+}
+
+@media (min-width: 600px) {
+    .nav-big {
+        display: none;
+    }
+
+    .nav-center {
+        display: block;
+        text-align: center;
+        margin: 0 40px;
+    }
+
+    .large-nav {
+        display: none;
+    }
+
+    .large-nav p {
+        display: none;
+    }
+}
+
+@media (min-width: 960px) {
+    .burger {
+        display: none;
+    }
+
+    .large-nav p {
+        display: block;
+    }
+
+    .nav-small {
+        display: none;
+    }
+
+    .nav-big {
+        display: block;
+    }
+
+    .nav-center {
+        display: block;
+        text-align: center;
+        margin: 0 40px;
+    }
+
+    .large-nav {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .nav-link {
+        padding: 20px;
+        display: inline-block;
+    }
+
+    .dropdown {
+        display: inline-block;
+    }
+
+    .large-nav img {
+        height: 35px;
+        width: 35px;
+        display: block;
+        border: $colorFour;
+        border-radius: 50%;
+        padding: 10px;
+        background: $colorFour;
+    }
+
+    .large-nav img:hover {
+        background: $colorFive;
+    }
+
+    .large-nav a {
+        text-decoration-style: none;
+        text-decoration: none;
+        color: $colorTwo;
+    }
+
+    .large-nav a:hover {
+        color: $colorFive;
+    }
+
+    .magnify:hover {
+        
+    }
+}

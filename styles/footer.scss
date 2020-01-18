@@ -1,0 +1,42 @@
+footer {
+    display: flex;
+    justify-content: center;
+}
+
+.socials {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    width: 60%;
+}
+
+.socials a {
+    height: 50px;
+    width: 50px;
+}
+
+.socials img {
+    height: 45px;
+    width: 45px;
+    display: block;
+    border: $colorFour;
+    border-radius: 50%;
+    padding: 10px;
+    background: $colorFour;
+}
+
+.socials img:hover {
+    background: $colorFive;
+}
+
+@media (min-width: 600px) {
+    .socials {
+        width: 60%;
+    }
+}
+
+@media (min-width: 960px) {
+    .socials {
+        width: 30%;
+    }
+}

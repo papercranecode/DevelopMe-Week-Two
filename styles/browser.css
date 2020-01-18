@@ -1,0 +1,569 @@
+@import 'normalize.css';
+@font-face {
+  font-family: "Nunito";
+  src: url("../assets/fonts/Nunito/Nunito-Regular.ttf");
+}
+@font-face {
+  font-family: "Poppins";
+  src: url("../assets/fonts/Poppins/Poppins-Regular.ttf");
+}
+@font-face {
+  font-family: serif;
+}
+* {
+  box-sizing: border-box;
+}
+
+/* GLOBAL */
+body {
+  margin: 0 auto;
+  width: 520px;
+  font-family: "Nunito", arial, sans-serif;
+  color: #4a4a4a;
+}
+
+h2 {
+  background: #fff0e9;
+  font-size: 15px;
+  color: black;
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Poppins", arial, sans-serif;
+}
+
+h3 {
+  font-weight: bold;
+}
+
+.nav-link {
+  float: right;
+  text-decoration: none;
+  padding: 2%;
+  vertical-align: top;
+}
+
+/* END GLOBAL */
+@media (min-width: 700px) {
+  body {
+    margin: 0 auto;
+    width: 800px;
+  }
+
+  h2 {
+    background: #fff0e9;
+    font-size: 25px;
+    width: 100%;
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Poppins", arial, sans-serif;
+  }
+}
+@media (min-width: 960px) {
+  body {
+    margin: 0 auto;
+    width: 1600px;
+  }
+
+  h2 {
+    font-size: 30px;
+  }
+}
+footer {
+  display: flex;
+  justify-content: center;
+}
+
+.socials {
+  display: flex;
+  justify-content: space-around;
+  padding: 10px;
+  width: 60%;
+}
+
+.socials a {
+  height: 50px;
+  width: 50px;
+}
+
+.socials img {
+  height: 45px;
+  width: 45px;
+  display: block;
+  border: #fff0e9;
+  border-radius: 50%;
+  padding: 10px;
+  background: #fff0e9;
+}
+
+.socials img:hover {
+  background: #ff6a7c;
+}
+
+@media (min-width: 600px) {
+  .socials {
+    width: 60%;
+  }
+}
+@media (min-width: 960px) {
+  .socials {
+    width: 30%;
+  }
+}
+h1 {
+  display: flex;
+  justify-content: center;
+  font-family: "Poppins", arial, sans-serif;
+  color: black;
+}
+
+.nav-big {
+  display: none;
+}
+
+.burger {
+  display: flex;
+  justify-content: center;
+}
+
+.large-nav {
+  display: none;
+}
+
+.header-block {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media (min-width: 600px) {
+  .nav-center {
+    display: block;
+    text-align: center;
+    margin: 0 40px;
+  }
+
+  .navigation {
+    display: flex;
+    justify-content: space-between;
+    vertical-align: top;
+  }
+
+  .h1-ignis {
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  .burger {
+    display: flex;
+    justify-content: flex-end;
+  }
+}
+@media (min-width: 600px) {
+  .nav-big {
+    display: none;
+  }
+
+  .nav-center {
+    display: block;
+    text-align: center;
+    margin: 0 40px;
+  }
+
+  .large-nav {
+    display: none;
+  }
+
+  .large-nav p {
+    display: none;
+  }
+}
+@media (min-width: 960px) {
+  .burger {
+    display: none;
+  }
+
+  .large-nav p {
+    display: block;
+  }
+
+  .nav-small {
+    display: none;
+  }
+
+  .nav-big {
+    display: block;
+  }
+
+  .nav-center {
+    display: block;
+    text-align: center;
+    margin: 0 40px;
+  }
+
+  .large-nav {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .nav-link {
+    padding: 20px;
+    display: inline-block;
+  }
+
+  .dropdown {
+    display: inline-block;
+  }
+
+  .large-nav img {
+    height: 35px;
+    width: 35px;
+    display: block;
+    border: #fff0e9;
+    border-radius: 50%;
+    padding: 10px;
+    background: #fff0e9;
+  }
+
+  .large-nav img:hover {
+    background: #ff6a7c;
+  }
+
+  .large-nav a {
+    text-decoration-style: none;
+    text-decoration: none;
+    color: #4a4a4a;
+  }
+
+  .large-nav a:hover {
+    color: #ff6a7c;
+  }
+}
+.uncategorized-work {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.uncategorized-work a {
+  display: inline-block;
+  text-align: center;
+  background: #41cadd;
+  border: solid 1px colorThree;
+  color: white;
+  padding: 10px;
+  text-decoration: none;
+}
+
+.blog-post {
+  display: block;
+  text-align: center;
+}
+
+.posted-on-date {
+  font-size: 10px;
+  color: #4a4a4a;
+  margin-top: -20px;
+}
+
+.blog-post-txt {
+  font-size: 15px;
+}
+
+.continue-reading a {
+  color: #b2b5ba;
+}
+
+.post-block {
+  margin-bottom: 50px;
+}
+
+@media (min-width: 600px) {
+  .blog-post {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+  }
+
+  .post-tape {
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+
+  .post-grafitti {
+    grid-column: 2/3;
+    grid-row: 1/2;
+  }
+
+  .post-gorilla {
+    grid-column: 1/2;
+    grid-row: 2/3;
+  }
+
+  .post-woods {
+    grid-column: 2/3;
+    grid-row: 2/3;
+  }
+}
+form {
+  font-family: "Nunito";
+  color: colorTwo;
+}
+
+.form-space {
+  margin-bottom: 20px;
+  max-width: 100%;
+}
+
+#message-box {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 2px;
+  resize: none;
+}
+
+#name {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  display: block;
+  border-radius: 2px;
+  padding: 10px;
+}
+
+#email {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  display: block;
+  border-radius: 2px;
+  padding: 10px;
+}
+
+#send-button {
+  font-size: 100%;
+  font-family: inherit;
+  padding: 15px;
+  border-radius: 1px;
+  background: #ff6a7c;
+  color: white;
+  margin: 20px 0 50px 0;
+}
+
+@media (min-width: 960px) {
+  form {
+    display: block;
+    width: 50%;
+  }
+}
+main {
+  display: block;
+  font-family: "Poppins", arial, sans-serif;
+  color: white;
+  margin: 0;
+}
+
+main section {
+  padding: 30px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.photo-hero-img {
+  filter: invert(0.2);
+}
+
+.photos {
+  width: 100%;
+  padding: 10px;
+}
+
+.my-name-is-joe {
+  display: block;
+  position: absolute;
+  margin-top: 30px;
+  z-index: 10;
+}
+
+.txt-1-dot {
+  color: #ff6a7c;
+}
+
+.photographer {
+  color: #41cadd;
+  font-style: italic;
+  font-family: serif;
+}
+
+.txt-1 {
+  font-size: 15px;
+}
+
+.txt-3 {
+  color: #b2b5ba;
+  font-size: 10px;
+  font-family: "Poppins";
+  margin-top: -15px;
+}
+
+@media (min-width: 600px) {
+  figure {
+    padding: 0;
+    margin: 0;
+  }
+
+  .content-center {
+    display: flex;
+    justify-content: center;
+  }
+
+  .photo-hero {
+    width: 100%;
+    padding: 0;
+    margin: -20px;
+  }
+
+  .my-name-is-joe {
+    display: block;
+    position: absolute;
+    margin-top: 30px;
+  }
+
+  .txt-1 {
+    font-size: 25px;
+  }
+
+  .txt-3 {
+    font-size: 10px;
+    margin-top: -25px;
+  }
+
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1vw;
+    padding: 2vw;
+  }
+
+  .gallery img {
+    display: block;
+    width: 100%;
+    margin-bottom: 2vw;
+  }
+}
+@media (min-width: 960px) {
+  .txt-1 {
+    font-size: 700%;
+    margin-top: 250px;
+    margin-left: 40px;
+  }
+
+  .txt-3 {
+    font-size: 15px;
+    margin-top: -100px;
+    margin-left: 40px;
+  }
+}
+.blogone-post {
+  display: block;
+}
+
+.uncategorized-work {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.uncategorized-work a {
+  display: inline-block;
+  text-align: center;
+  background: #41cadd;
+  border: solid 1px colorThree;
+  color: white;
+  padding: 10px;
+  text-decoration: none;
+}
+
+.blog-text {
+  display: block;
+  padding: 20px;
+  margin-top: 20px;
+  line-height: 1.5;
+}
+
+.posted-on-date {
+  font-size: 10px;
+  color: #4a4a4a;
+  margin-top: 20px;
+}
+
+.aside {
+  display: block;
+  padding: 20px;
+}
+
+.search-bar {
+  display: inline-block;
+}
+
+.search-box {
+  width: 100%;
+  display: block;
+  border-radius: 2px;
+  padding: 10px;
+}
+
+.search-button {
+  font-size: 100%;
+  font-family: inherit;
+  padding: 15px;
+  border-radius: 1px;
+  background: #ff6a7c;
+  color: white;
+  margin: 20px 0 50px 0;
+}
+
+.aside-cards {
+  display: block;
+  padding: 20px;
+  line-height: 1.5;
+}
+
+.recent-posts li {
+  list-style-type: none;
+  margin-left: -40px;
+}
+
+li a {
+  text-decoration: none;
+  color: #4a4a4a;
+}
+
+#rss {
+  text-decoration-style: dotted;
+  text-decoration-style: double;
+}
+
+@media (min-width: 768px) {
+  .layout-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 70% 30%);
+    grid-gap: 3px;
+  }
+
+  .blogone-post {
+    grid-column: 1/2;
+  }
+
+  .aside {
+    grid-column: 2/3;
+  }
+}
+
+/*# sourceMappingURL=browser.css.map */

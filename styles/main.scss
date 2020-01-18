@@ -1,0 +1,112 @@
+main {
+    display: block;
+    font-family: 'Poppins', arial, sans-serif;
+    color: $colorThree;
+    margin: 0;
+}
+
+main section {
+    padding: 30px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.photo-hero-img {
+    filter: invert(.2);
+}
+
+.photos {
+    width: 100%; 
+    padding: 10px;
+}
+
+.my-name-is-joe {
+    display: block;
+    position: absolute;
+    margin-top: 30px;
+    z-index: 10;
+}
+
+.txt-1-dot {
+    color: $colorFive;
+}
+
+.photographer {
+    color: $colorOne;
+    font-style: italic;
+    font-family: serif;
+}
+
+.txt-1 {
+    font-size: $fontSize2;
+}
+
+.txt-3 {
+    color: $colorSix;
+    font-size: $fontSize3;
+    font-family: 'Poppins';
+    margin-top: -15px;
+}
+
+
+@media (min-width: 600px) {
+
+     figure {
+        padding: 0;
+        margin: 0;
+    }
+
+    .content-center {
+        display: flex;
+        justify-content: center;
+    }
+
+    .photo-hero {
+        width: 100%;
+        padding: 0;
+        margin: -20px;
+    }
+
+    .my-name-is-joe {
+        display: block;
+        position: absolute;
+        margin-top: 30px;
+    }
+    
+    .txt-1 {
+        font-size: $fontSize1;
+    }
+    
+    .txt-3 {
+        font-size: $fontSize3;
+        margin-top: -25px;
+    }
+
+    .gallery {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 1vw;
+        padding: 2vw;
+}
+
+    .gallery img {
+        display: block;
+        width: 100%;
+        margin-bottom: 2vw;
+    }
+}
+
+@media (min-width: 960px) {
+    .txt-1 {
+        font-size: 700%;
+        margin-top: 250px;
+        margin-left: 40px;
+    }
+    
+    .txt-3 {
+        font-size: $fontSize2;
+        margin-top: -100px;
+        margin-left: 40px;
+    }
+}

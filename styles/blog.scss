@@ -1,0 +1,72 @@
+.uncategorized-work {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.uncategorized-work a {
+    display: inline-block;
+    text-align: center;
+    background: $colorOne;
+    border: solid 1px colorThree;
+    color: $colorThree;
+    padding: 10px;
+    text-decoration: none;
+}
+
+.blog-post {
+    display: block;
+    text-align: center;
+}
+
+.posted-on-date {
+    font-size: $fontSize3;
+    color: $colorTwo;
+    margin-top: -20px;
+}
+
+.blog-post-txt {
+    font-size: $fontSize2;
+}
+
+.continue-reading a {
+    color: $colorSix;
+}
+
+.post-block {
+    margin-bottom: 50px;
+}
+
+
+@media (min-width: 600px) {
+    .blog-post {
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 10px;
+    }
+
+    .post-tape {
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+    }
+
+    .post-grafitti {
+        grid-column: 2 / 3;
+        grid-row: 1 / 2;
+    }
+
+    .post-gorilla {
+        grid-column: 1 / 2;
+        grid-row: 2 / 3;
+    }
+
+    .post-woods {
+        grid-column: 2 / 3;
+        grid-row: 2 / 3;
+    }
+}
+
+@media (min-width: 960px) {
+
+}
